@@ -6,10 +6,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### docker build -t take-home .
-### docker run -d -p 3000:3000 take-home
-### curl localhost:3000
-
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -72,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Docker setup
+
+### `docker build -t take-home .`
+### `docker run -d -p 3000:3000 take-home`
+### `curl localhost:3000 (optional)`
+
+## Pushing image to dockerhub
+
+### `docker tag take-home:latest <docker-hub-username>/<repo-name>`
+### `docker push <docker-hub-username>/take-home:latest`
