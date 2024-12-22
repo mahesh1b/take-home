@@ -1,0 +1,130 @@
+.nav-bar-container {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(
+    to bottom,
+    #2e3a50 0,
+    #4976bc 50%,
+    #fff 50%,
+    #fff 100%
+  );
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  position: sticky; 
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  background-size: 100% 200%;
+  color: #fff;
+  transition: background-position var(--hfs-local-duration, 0.5s) ease;
+  border-color: initial;
+  border-style: initial;
+  border-width: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.nav-home-link {
+  display: flex;
+  align-items: center;
+  margin-right: auto; 
+}
+
+.home-icon {
+  width: 30px;
+  height: 30px;
+  fill: white; 
+  margin-right: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; 
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background-color: #a8bee2;
+  width: auto; 
+}
+
+.menu-toggle {
+  display: none; 
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.home-icon {
+  width: 30px;
+  height: 30px;
+  fill: white; 
+  margin-right: 1rem; 
+  transition: fill 0.3s ease; 
+}
+
+.nav-home-link:hover .home-icon{ 
+  fill: lightgray;
+}
+a.nav-home-link {
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #4976bc;
+    text-align: center; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-content{
+    justify-content: space-between;
+  }
+  .nav-item {
+    margin: 1rem 0; 
+    display: block; 
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-home-link {
+    margin-right: 0;
+  }
+}

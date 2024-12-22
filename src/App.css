@@ -1,0 +1,107 @@
+body {
+  font-family: sans-serif;
+}
+
+.diagnosis-history-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  /* width: 100%; */
+  text-align: center;
+  margin-top: 50px;
+  background: #f8f2fb;
+  position: relative;
+  padding-top: 130px;
+  padding-bottom: 170px;
+}
+
+.newsapi-section-block {
+  opacity: 1;
+  padding: 20px;
+  width: 400px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.15);
+  transform: scale(1, 1);
+  transform-origin: center center;
+  transition: all 0.1s ease-in 0s;
+}
+
+.guardianapi-section-block {
+  opacity: 1;
+  padding: 20px;
+  width: 400px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.15);
+  transform: scale(1, 1);
+  transform-origin: center center;
+  transition: all 0.1s ease-in 0s;
+}
+
+.newyorktimeapi-section-block {
+  opacity: 1;
+  padding: 20px;
+  width: 400px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.15);
+}
+
+.newyorktimeapi-section-block:hover,
+.guardianapi-section-block:hover,
+.newsapi-section-block:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.diagnosis-section-block-container {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.newsapi-section-block h2,
+.guardianapi-section-block h2,
+.newyorktimeapi-section-block h2 {
+  font-family: Unbounded;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+.description-section {
+  font-family: Roboto;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px !important;
+}
+
+.description-section a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.description-section a:hover {
+  font-size: 18px;
+  font-weight: 700;
+  color: 4976bc;
+}
+
+@media screen and (max-width: 1024px) {
+  .diagnosis-section-block-container {
+    flex-direction: column;
+  }
+}
