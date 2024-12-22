@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### docker build -t take-home .
+### docker run -d -p 3000:3000 take-home
+### curl localhost:3000
+
 ### `npm start`
 
 Runs the app in the development mode.\
